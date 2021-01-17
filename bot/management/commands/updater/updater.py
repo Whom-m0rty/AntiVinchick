@@ -15,7 +15,7 @@ def process_event_new_message(event, Vk):
 
         if message.text == 'Начать':
             questionnaire.start_message(message)
-        elif message.text == 'Добавть анкету' or 'Поиск анкеты':
+        elif message.text == 'Добавть анкету' or 'Поиск анкеты' in message.text:
             questionnaire.help_add_questionnaire(message)
 
         elif message.have_fwd_message:
