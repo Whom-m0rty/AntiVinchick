@@ -5,7 +5,6 @@ After=network.target
 [Service]
 User=whom
 Group=whom
-Restart=on-failure
 
 WorkingDirectory=/home/whom/AntiVinchick/
 Environment="PYTHONPATH=/home/whom/AntiVinchick/"
