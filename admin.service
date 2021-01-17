@@ -1,0 +1,15 @@
+[Unit]
+Description=Admin Vk Bot
+After=network.target
+
+[Service]
+User=whom
+Group=whom
+Restart=on-failure
+
+WorkingDirectory=/home/whom/AntiVinchick/
+Environment="PYTHONPATH=/home/whom/AntiVinchick/"
+ExecStart=/home/whom/AntiVinchick/.venv/bin/python /home/whom/AntiVinchick/manage.py runserever 0:8000
+
+[Install]
+WantedBy=multi-user.target
