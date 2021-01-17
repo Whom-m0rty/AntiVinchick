@@ -14,6 +14,8 @@ def process_event_new_message(event, Vk):
         have_access = have_access_bd(peer_id=message.peer_id)
 
         if message.text == 'Начать':
+            questionnaire.start_message(message)
+        elif message.text == 'Добавть анкету' or 'Поиск анкеты':
             questionnaire.help_add_questionnaire(message)
 
         elif message.have_fwd_message:

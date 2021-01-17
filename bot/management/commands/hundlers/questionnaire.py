@@ -5,11 +5,20 @@ from bot.management.commands import text_messages
 from bot.management.commands.utils import questionnaire, user
 
 
-def help_add_questionnaire(message: types.Message):
+def start_message(message: types.Message):
     message.vk.messages.send(
         user_id=message.peer_id,
         random_id=get_random_id(),
         message=text_messages.START_MESSAGE,
+        keyboard=questionnaire_keyboard.add_questionnaire()
+    )
+
+
+def help_add_questionnaire(message: types.Message):
+    message.vk.messages.send(
+        user_id=message.peer_id,
+        random_id=get_random_id(),
+        message=text_messages.HELP_MESSAGE,
         keyboard=questionnaire_keyboard.add_questionnaire()
     )
 

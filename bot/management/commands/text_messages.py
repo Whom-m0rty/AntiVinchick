@@ -12,6 +12,12 @@ START_MESSAGE = \
 Можно пример?
 - Да, конечно! Тут есть небольшое руководство: https://telegra.ph/Kak-polzovatsya-botom-01-17"""
 
+HELP_MESSAGE = """
+Как добавить анкету? Просто перешли мне анкету из ДайВинчика!
+
+Тут есть небольшое руководство: https://telegra.ph/Kak-polzovatsya-botom-01-17
+"""
+
 QUESTIONNAIRE_ALREADY_IS_EXIST = \
     """Анкета уже существует, попробуйте другую."""
 
