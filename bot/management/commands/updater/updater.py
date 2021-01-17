@@ -15,6 +15,7 @@ def process_event_new_message(event, Vk):
 
         if message.text == 'Начать':
             questionnaire.help_add_questionnaire(message)
+
         elif message.have_fwd_message:
             if message.questionnaire_is_profile_url:
                 questionnaire.add_questionnaire_profile_url(message)

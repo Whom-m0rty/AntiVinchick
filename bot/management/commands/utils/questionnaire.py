@@ -52,6 +52,7 @@ def add_questionnaire_profile_url(message):
         questionnaire = user.profile_url_for
         questionnaire.profile_url = message.questionnaire_profile_url.strip()
         questionnaire.save()
+        user.profile_url_for_id = None
         user.is_input_profile_url = False
         user.save()
         add_questionnaire_added_by_user(peer_id=message.peer_id)

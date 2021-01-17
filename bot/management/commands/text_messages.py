@@ -1,7 +1,16 @@
 from django.conf import settings
 
 START_MESSAGE = \
-    """Просто перешли мне анкету, я сам все сделаю за тебя!"""
+    """Добро пожаловать в бота!
+
+Что умеет этот бот? 
+- Пришли ему анкету из бота дайвинчика и получи ссылку на на владельца анкеты!
+
+Как получить доступ к базе данных анкет?
+- Просто пришли боту 5 анкет с вазимной симпатией. Бот распозанет все виды взаимных симпатий.
+
+Можно пример?
+- Да, конечно! Тут есть небольшое руководство: https://telegra.ph/Kak-polzovatsya-botom-01-17"""
 
 QUESTIONNAIRE_ALREADY_IS_EXIST = \
     """Анкета уже существует, попробуйте другую."""
@@ -9,6 +18,8 @@ QUESTIONNAIRE_ALREADY_IS_EXIST = \
 QUESTIONNAIRE_ADDED = \
     """Анкета "{name}" добавлена, спасибо. \n\nВы уже добавили {count_added_questionnaire} анкет"""
 
+QUESTIONNAIRE_ADDED_PROFILE_URL = \
+    """Анкета добавлена, спасибо. \n\nВы уже добавили {count_added_questionnaire} анкет"""
 
 
 QUESTIONNAIRE_NEED_PROFILE_URL = \

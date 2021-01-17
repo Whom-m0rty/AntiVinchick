@@ -17,8 +17,8 @@ def help_add_questionnaire(message: types.Message):
 def add_questionnaire_profile_url(message: types.Message):
     if not questionnaire.check_questionnaire_exist(message, profile_url=message.questionnaire_profile_url):
         questionnaire.add_questionnaire_profile_url(message)
-        text = text_messages.QUESTIONNAIRE_ADDED.format(
-            name=message.questionnaire_name,
+
+        text = text_messages.QUESTIONNAIRE_ADDED_PROFILE_URL.format(
             count_added_questionnaire=user.get_count_added_questionnaire(message)
         )
         message.vk.messages.send(
