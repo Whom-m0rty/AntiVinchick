@@ -1,6 +1,15 @@
 # AntiVinchick
 
 Ну эээ... 
+# Настройка токенов:
+```
+AntiVinchick/settings.py 
+
+VK_BOT_TOKEN = 'dbec106482ef194b8231145c3d3b522437289b6bc4a92b30f7e750e74149c1477df806f191fb8c563d52c'
+VK_GROUP_ID = '201924301'
+NEED_TO_ACCESS = 5
+```
+
 # Что бы запустить сие чудо:
 
 Накатываем миграции
